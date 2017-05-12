@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>模拟试卷</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="layer/layer.js" type="text/javascript"></script>
+</head>
+<style>
+	.layui-layer-imgbar{
+		display: none !important;
+	}
+</style>
+<body>
+	<div class="paperWrap">
+		<div class="paper-l">
+			<div class="paper-l-item">考场号：001</div>
+			<div class="paper-l-item">姓名：mp</div>
+			<div class="paper-l-item">科目：科目一</div>
+			<div class="paper-l-item">车型：C1</div>
+			<div class="paper-l-item">剩余时间：0时3分15秒</div>
+			<div class="paper-l-item">
+				<h1>提示选项</h1>
+				<p>
+					<label><input type="checkbox" name="">显示答案</label>
+				</p>
+				<p>
+					<label><input type="checkbox" name="">显示对错</label>
+				</p>
+				<p>
+					<label><input type="checkbox" name="">显示讲解</label>
+				</p>
+				<hr>
+				<p>
+					<label><input type="checkbox" name="">语音讲解</label>
+				</p>
+				<p>
+					<label><input type="checkbox" name="">语音提示</label>
+				</p>
+				<p>
+					<label><input type="checkbox" name="">答错时语音讲解</label>
+				</p>
+				<hr>
+				<p>
+					<label><input type="radio" name="fy">手动翻页</label>
+				</p>
+				<p>
+					<label><input type="radio" name="fy">自动翻页</label>
+				</p>
+				<p>
+					<label><input type="radio" name="fy">答对时翻页</label>
+				</p>
+			</div>
+		</div>
+		<div class="paper-content">
+			<!-- 单选 -->
+			<div  class="paper-content-item" style="min-height: 300px;">
+				<span class="bt">考试题目-科目一A（基础）库警告标志-ID  =  9100139</span>
+				<h1>1、(单选)对驾驶已达到报废标准的机动车上路行驶的驾驶人,会受到下列哪种处罚?</h1>
+				<p>A.吊销机动车驾驶证</p>
+				<p>B.追究刑事责任</p>
+				<p>C.处15日以下拘留</p>
+				<p>D.处20以上200元以下罚款</p>
+			</div>
+			<!-- 多选 -->
+			<div  class="paper-content-item" style="min-height: 300px;">
+				<span class="bt">考试题目-科目一A（基础）库警告标志-ID  =  9100139</span>
+				<h1>2、(多选)对驾驶已达到报废标准的机动车上路行驶的驾驶人,会受到下列哪种处罚?</h1>
+				<p><label><input type="checkbox" name="">A.吊销机动车驾驶证</label></p>
+				<p><label><input type="checkbox" name="">B.追究刑事责任</label></p>
+				<p><label><input type="checkbox" name="">C.处15日以下拘留</label></p>
+				<p><label><input type="checkbox" name="">D.处20以上200元以下罚款</label></p>
+				<!-- 确定按钮 -->
+				<button>确定</button>
+			</div>
+
+			<div  class="paper-content-item">
+				<span class="bt">讲解</span>
+				<p class="jj-content">讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解讲解</p>
+			</div>
+			<div  class="paper-content-item clearfix">
+				<span class="bt">答题选项-多项选择完成后请点击确定</span>
+				<h1 style="display: inline-block;*zoom:1;*display: inline;">
+					您的答案：
+					<div class="btn">A</div>
+					<div class="btn" style="">B</div>
+					<img src="imgs/no.jpg" alt="">
+					<img src="imgs/yes.jpg" alt="">
+					正确答案：
+					<div class="btn">B</div>
+				</h1>
+				<div class="right">
+					<h1>
+						选择：
+						<div class="btn">C</div>
+						<div class="btn">D</div>
+						<div class="btn"><img src="imgs/yes1.png" alt=""></div>
+						<div class="btn"><img src="imgs/no1.png" alt=""></div>
+					</h1>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div  class="paper-content-item clearfix">
+				<span class="bt">提示信息</span>
+				<p class="jj-content">判断选择题：请选择您认为正确的答案</p>
+				<div class="paper-btn-box right">
+					<a href="javascript:;" title="" class="btn">上一题-</a>
+					<a href="javascript:;" title="" class="btn">上一题+</a>
+					<a href="javascript:;" title="" class="btn" style="width: 74px;text-align: center;margin-left: 20px;" id="submit-btn">交卷</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="photos">
+				<img src="imgs/p1.jpg" alt="">
+			</div>
+		</div>
+		<div class="paper-r">
+			<ul class="subjects-list">
+				<li class="green">
+					1<span>√</span>
+				</li>
+				<li class="green">
+					2<span>√</span>
+				</li>
+				<li class="green">
+					3<span>×</span>
+				</li>
+				<li class="red">
+					4<span>ABCD</span>
+				</li>
+				<li class="blue">
+					5<span>B</span>
+				</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+				<li>15</li>
+				<li>16</li>
+				<li>17</li>
+				<li>18</li>
+				<li>19</li>
+				<li>20</li>
+				<li>21</li>
+				<li>22</li>
+				<li>23</li>
+				<li>24</li>
+				<li>25</li>
+				<li>26</li>
+				<li>27</li>
+				<li>28</li>
+				<li>29</li>
+				<li>30</li>
+				<li>31</li>
+				<li>32</li>
+				<li>33</li>
+				<li>34</li>
+				<li>35</li>
+				<li>36</li>
+				<li>37</li>
+				<li>38</li>
+				<li>39</li>
+				<li>40</li>
+				<li>41</li>
+				<li>42</li>
+				<li>43</li>
+				<li>44</li>
+				<li>45</li>
+				<li>46</li>
+				<li>47</li>
+				<li>48</li>
+				<li>49</li>
+				<li>50</li>
+				<li>51</li>
+				<li>52</li>
+				<li>53</li>
+				<li>54</li>
+				<li>55</li>
+				<li>56</li>
+				<li>57</li>
+				<li>58</li>
+				<li>59</li>
+				<li>60</li>
+				<li>61</li>
+				<li>62</li>
+				<li>63</li>
+				<li>64</li>
+				<li>65</li>
+				<li>66</li>
+				<li>67</li>
+				<li>68</li>
+				<li>69</li>
+				<li>70</li>
+				<li>71</li>
+				<li>72</li>
+				<li>73</li>
+				<li>74</li>
+				<li>75</li>
+				<li>76</li>
+				<li>77</li>
+				<li>78</li>
+				<li>79</li>
+				<li>80</li>
+				<li>81</li>
+				<li>82</li>
+				<li>83</li>
+				<li>84</li>
+				<li>85</li>
+				<li>86</li>
+				<li>87</li>
+				<li>88</li>
+				<li>89</li>
+				<li>90</li>
+				<li>91</li>
+				<li>92</li>
+				<li>93</li>
+				<li>94</li>
+				<li>95</li>
+				<li>96</li>
+				<li>97</li>
+				<li>98</li>
+				<li>99</li>
+				<li>100</li>
+			</ul>
+			<div class="paper-btns">
+				<a href="javascript:;">视频讲解</a>
+				<a href="javascript:;">语音讲解</a>
+				<a href="javascript:;">错题重做</a>
+			</div>
+			<div class="paper-result">
+				<h1>练习结果</h1>
+				<div class="list">抽取数量：100道</div>
+				<div class="list">答对题目：<div class="green">绿</div>0道</div>
+				<div class="list">答错题目：<div class="red">红</div>0道</div>
+				<div class="list">未答题目：<div>白</div>100道</div>
+				<div class="list">首正率：100%</div>
+				<div class="list">答题比成绩：0</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- 交卷提示信息弹框 -->
+<div id="info" class="none">
+	<img src="imgs/icon8.jpg" alt="">尚有100道题未做，是否交卷?
+	<div class="tk2-content-btm" style="padding-top: 0;">
+		<a href="javascript:;" title="">确认</a>
+		<a href="javascript:;" title="">取消</a>
+	</div>
+</div>
+<script>
+	// 交卷提示信息
+	$('#submit-btn').on('click', function(){
+	  	layer.open({
+	  		type: 1,
+	  		area: ['300px', '147px'],
+	  		icon: 1,
+		  	title:'注意', 
+		 	content:$("#info")
+		});  
+	});
+	//图片
+	$('.photos').find('img').click(function(){
+		layer.photos({
+		  photos: '.photos',
+		}); 
+	})
+</script>
+</html>

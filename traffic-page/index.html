@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>同创理论强化服务加盟平台</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/code.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 头部顶部 -->
+	<div class="head-top-box">
+		<div class="boxWrap">
+			<div class="right head-btn-box">
+				<a href="javascript:;" class="login-btn">登录</a>
+				<a href="javascript:;">注册</a>
+			</div>
+			<span>欢迎登陆同创理论强化服务加盟平台</span>
+		</div>
+	</div>
+	<!-- logo部分 -->
+	<div class="head-content-box boxWrap">
+		<div class="right">
+			<span><img src="imgs/icon1.jpg" alt="">品质更高</span>
+			<span><img src="imgs/icon2.jpg" alt="">价格更优</span>
+			<span><img src="imgs/icon3.jpg" alt="">服务更好</span>
+		</div>
+		<img src="imgs/logo.jpg" alt="" class="logo-img">
+	</div>
+	<!-- 轮播图部分 -->
+	<div class="bannerWrap">
+		<img src="imgs/banner1.jpg" alt="" class="banner-img">
+		<img src="imgs/banner2.jpg" alt="" class="banner-img">
+		<img src="imgs/banner3.jpg" alt="" class="banner-img">
+		<ul class="ulNum"></ul>
+		<!-- 用户登录表单 -->
+		<div class="boxWrap" style="z-index: 9999;"">
+			<div class="loginWrap">
+				<div class="title">
+					用户登录
+				</div>
+				<div class="login-content">
+					<p class="surplusNum"></p>
+					<div class="login-item">
+						<img src="imgs/icon4.jpg" alt="">
+						<input type="text" name="" placeholder="请输入用户名">
+					</div>
+					<div class="login-item">
+						<img src="imgs/icon5.jpg" alt="">
+						<input type="password" name="" placeholder="请输入密码">
+					</div>
+					<div class="login-item">
+						<img src="imgs/icon6.jpg" alt="">
+						<input type="text" name="" placeholder="验证码" style="width:140px" id="code_input">
+						<!-- 验证码 -->
+						<div class="code">
+							<div id="v_container"></div>
+						</div>
+					</div>
+					<p class="login-btm">
+						<a href="javascript:;" title="" class="mima right">忘记密码？</a>
+						<input type="checkbox" name="">三十天内自动登录
+					</p>
+					<a href="javascript:;" title="" class="login-inp" id="my_button">登录</a>
+					<div class="register-box">
+						没有账号？
+						<a href="javascript:;" class="register-inp">立即注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<p>总部地址：江苏省徐州市沛县  服务热线：18251636620   13512577077</p>
+		<p>Copyright © 2016 同创理论强化服务平台 苏ICP备13005611号-1</p>
+	</div>
+</body>
+<script>
+	// 验证码
+	var verifyCode = new GVerify("v_container");
+
+	document.getElementById("my_button").onclick = function(){
+		var res = verifyCode.validate(document.getElementById("code_input").value);
+		if(res){
+				$(".surplusNum").text("验证正确");
+			}else{
+				$(".surplusNum").text("验证码错误");
+			}
+	}
+
+	// 轮播图
+	var index=0;
+	var timer;
+	// 获取图片
+	var imgs = $(".banner-img");
+	// 创建图片数量
+	for(var i=0;i<imgs.length;i++){
+		$(".ulNum").append("<li>");
+	}
+	//默认第一个高亮
+	$(".banner-img").hide().eq(index).show();
+	$(".ulNum li").eq(index).addClass("active").siblings().removeClass("active");
+	$(".banner-img").hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer=setTimeout(doToggleImage,4000);
+	})
+	timer=setTimeout(doToggleImage,4000);
+
+	//切换图片
+	function doToggleImage(){
+		index++;
+		if(index==imgs.length){
+			index=0;
+		}
+		$(".banner-img").fadeOut().eq(index).fadeIn();
+		$(".ulNum li").eq(index).addClass("active").siblings().removeClass("active");
+		timer=setTimeout(doToggleImage,4000);
+	}
+	//点击按钮切换图片
+	$(".ulNum").find("li").each(function(i){
+		$(this).click(function(){
+			clearTimeout(timer);
+			index=i;
+			$(".banner-img").fadeOut().eq(index).fadeIn();
+			$(".ulNum li").eq(index).addClass("active").siblings().removeClass("active");
+			timer=setTimeout(doToggleImage,4000);
+		})
+	})
+</script>
+</html>

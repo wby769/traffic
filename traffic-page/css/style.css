@@ -1,0 +1,718 @@
+/* 登录页开始 */
+
+/* 头部顶部 */
+.head-top-box{
+	width: 100%;
+	height: 43px;
+	line-height: 43px;
+	border-bottom:1px solid #e5e5e5;
+	font-size: 16px;
+	color: #666;
+}
+.head-btn-box .login-btn,.head-btn-box span{
+	display: inline-block;
+	padding-right: 12px;
+	margin-right: 5px;
+	border-right:1px solid #999;
+	line-height: 14px;
+}
+.head-btn-box{
+	font-size: 14px;
+}
+.head-btn-box a{
+	color: #666;
+}
+.head-btn-box a:hover{
+	color:#fc9550;
+} 
+/* logo部分 */
+.head-content-box{
+	height: 96px;
+	font-size: 18px;
+	color: #888;
+}
+.logo-img{
+	margin-top:15px; 
+}
+.head-content-box span{
+	margin-left: 40px;
+	margin-top:35px;
+	display: inline-block;
+}
+.head-content-box span img{
+	margin-right: 10px;
+}
+/* 轮播图部分 */
+.bannerWrap{
+	width: 100%;
+	height: 555px;
+	position: relative;
+	overflow: hidden;
+}
+.bannerWrap .banner-img{
+	position:absolute;
+	top: 0;
+	left:50%;
+	margin-left:-960px;
+	z-index: 9;
+}
+.bannerWrap .ulNum{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -56px;
+	z-index: 99;
+}
+.bannerWrap .ulNum li{
+	width:34px;
+	height: 8px;
+	background: #fff;
+	float: left;
+	margin-right:5px;
+	cursor: pointer;
+}
+.bannerWrap .ulNum .active{
+	background: #f09427;
+}
+/* 用户登录内容 */
+.loginWrap{
+	position: absolute;
+	z-index: 999;
+	width: 350px;
+	height: 415px;
+	background: #fff;
+	top:50px;
+	right:40px;
+}
+.loginWrap .title{
+	height: 45px;
+	background:#e6e6e6; 
+	text-align:center;
+	line-height:45px;
+	color:#666;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.login-content{
+	width: 80%;
+	margin:20px auto 0;
+}
+.surplusNum{
+	color: red;
+	margin-bottom: 10px;
+}
+.login-item{
+	width: 100%;
+	height:30px;
+	border: 1px solid #e5e5e5;
+	border-radius:5px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.login-item img{
+	margin:5px 10px;
+}
+.login-item input{
+	height: 29px;
+	line-height:28px;
+	width:210px;
+	outline: none;
+}
+.code{
+	width:90px;
+	height: 30px;
+	background: yellow;
+	position: absolute;
+	top: 0;
+	right:0;
+}
+.login-btm{
+	color: #666;
+	margin-bottom: 15px;
+}
+.login-btm input{
+	vertical-align:middle;
+	margin-right:5px;
+}
+.mima{
+	color: #666;
+}
+.mima:hover{
+	color: #fc9550;
+	text-decoration:underline; 
+}
+.login-inp{
+	display: inline-block;
+	width: 100%;
+	height:40px;
+	background:#ffa800;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-radius:5px;
+}
+.login-inp:hover{
+	background:#fb8102; 
+}
+.register-box{
+	text-align: center;
+}
+.register-box a{
+	color:#00a8ff; 
+}
+.register-box a:hover{
+	text-decoration:underline; 
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 28px;
+	padding-top:25px; 
+	padding-bottom:25px;
+	color: #666;
+}
+.phcolor{ 
+	color:#999;
+}
+
+/* 登录页结束 */
+
+/* 平台页面开始 */
+.treeaceWrap{
+	width: 100%;
+	border-top:2px solid #dedede;
+	padding-top: 20px;
+}
+.treeace-l{
+	width: 310px;
+	height: 400px;
+	border: 1px solid #ccc;
+	margin-left: 100px;
+	margin-right:25px;
+}
+.tt{
+	height: 36px;
+	background:#f0f0ee; 
+	line-height: 36px;
+	font-size: 14px;
+	padding-left:20px;
+	border-bottom: 1px solid #ccc;
+}
+.treeace-l-content{
+	margin: 20px 15px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #777;
+}
+.treeace-l-content p{
+	margin-bottom: 5px;
+}
+.treeace-btm{
+	margin: 20px 15px;
+}
+.treeace-btm p{
+	margin-bottom: 30px;
+}
+.treeace-btm a{
+	display: inline-block;
+	width:80px;
+	height: 30px;
+	background:#0169cc ;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	border-radius:3px;
+	margin:15px 10px;
+}
+.treeace-btm a:hover{
+	background:#0174e2; 
+}
+.treeace-btn{
+	padding:0 35px;
+}
+.treeace-r{
+	width: 650px;
+	height: 400px;
+	border: 1px solid #ccc;
+}
+.treeace-r-content{
+	text-align:center;
+	height: 347px;
+	overflow:auto;
+	padding-top: 15px;
+	position: relative;
+}
+.treeace-r .item-list{
+	margin-bottom: 15px;
+}
+.item-list span{
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #5eb0ff;
+	margin-right: 10px;
+}
+.item-list a{
+	display: inline-block;
+	width:150px;
+	height: 32px;
+	background:#ff7f01;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	position: relative;
+	top: -1px;
+}
+.item-list a:hover{
+	background: #fd8b1a;
+}
+.back-box{
+	text-align: center;
+}
+.back-btn{
+	display: inline-block;
+	width:200px;
+	height:50px;
+	background:#0169cc ;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	border-radius:5px;
+	margin-top:30px;
+}
+.back-btn:hover{
+	background:#0174e2; 
+}
+/* 平台弹框 */
+.tk1-content{
+	padding-left:40px;
+}
+.tk1-content h1{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.tk1-content p{
+	font-size: 16px;
+	line-height: 30px;
+}
+.tk1-content-btm a{
+	font-size: 14px;
+	border: 1px solid #999;
+	padding: 0px 20px;
+	border-radius: 2px;
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	background: #e9eaea;
+	margin-bottom: 13px;
+}
+.tk1-content-btm a:hover {
+	background: #ddd;
+}
+#tk1 img,#tk2 img,#tk3 img{
+	/* margin-left: 5px; */
+	margin-bottom: 15px;
+}
+#tk1,#tk2,#tk3{
+	background:#fff;
+}
+.tk2-content table{
+	border-collapse: collapse;
+	width: 94%;
+	margin:0 auto;
+}
+.tk2-content td{
+	border: 1px solid #777;
+	height: 30px;
+	padding-left: 15px;
+}
+.tk2-content-btm{
+	text-align: center;
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 24px;
+}
+.tk2-content-btm a{
+	font-size: 14px;
+	border: 1px solid #999;
+	padding:3px 12px;
+	border-radius:2px;
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	background: #e9eaea;
+}
+.tk2-content-btm a:hover{
+	background: #ddd;
+}
+.tk3-content{
+	padding-left: 15px;
+	padding-bottom: 14px;
+}
+.tk3-content>div{
+	width: 48%;
+	height: 330px;
+	background:#f5f5f5;
+	padding-top: 30px;
+}
+.tk3-content-l input{
+	border: 1px solid #ccc;
+	outline: none;
+	padding:0 10px;
+	width: 200px;
+	height: 24px;
+    line-height: 24px;
+}
+.tk3-content-l p{
+	line-height:36px;
+	margin-left: 25px;
+}
+.tk3-content-r ul{
+	padding: 0 15px 0 25px;
+}
+.tk3-content-r ul li{
+	width:95px;
+	height:48px;
+	background:#c0c0c0;
+	border-radius:3px;
+	margin-right: 10px;
+	margin-bottom: 6px; 
+	color: #fff;
+	text-align: center;
+	line-height: 48px;
+	float: left;
+	font-size: 16px;
+	cursor: pointer;
+}
+/* 平台页面结束 */
+
+/* 平台页面子页开始 */
+.treeace-r-content1{
+	padding-left:30px;
+	padding-top:15px;
+	font-size:18px; 
+	text-align: left;
+}
+.treeace-r-content1 p{
+	line-height: 36px;
+}
+.treeace-r-content1 input{
+	margin-right: 10px;
+}
+.g-color{
+	background:#43b739; 
+}
+.g-color:hover{
+	background:#24a519; 
+}
+.back-box1 a{
+	margin-right:10px;
+}
+/* 平台页面子页结束 */
+
+/* 模拟试卷开始 */
+.paperWrap{
+	padding:60px 410px 0 230px;
+	position: relative;
+}
+.paper-l{
+	width: 206px;
+	position: absolute;
+	left:10px;
+	top:60px;
+	font-size: 13px;
+}
+.paper-l-item{
+	border:1px dashed #444;
+	padding:8px 10px;
+	margin-bottom:15px;
+}
+.paper-l-item h1{
+	margin-bottom: 15px;
+}
+.paper-l-item input{
+	margin-right:5px;
+	vertical-align: middle;
+}
+.paper-l-item p{
+	line-height: 24px;
+}
+.paper-l-item hr{
+	border: 1px solid #ccc;
+    margin: 10px 0;
+}
+.paper-r{
+	width: 390px;
+	position: absolute;
+	right:8px;
+	top:60px;
+}
+.subjects-list{
+	height:363px;
+	background:#f0f0ee; 
+	overflow: auto;
+	padding-left:12px;
+	padding-top:12px;
+	padding-bottom: 6px;
+	position: relative;
+}
+.subjects-list li{
+	width:35px;
+	height:34px;
+	border: 1px solid; 
+	position: relative;
+	padding-left: 3px;
+	float: left;
+	margin-right:5px;
+	margin-bottom: 5px; 
+	cursor: pointer;
+	background: #fff;
+	font-size: 13px;
+}
+.subjects-list li span{
+	position: absolute;
+	bottom:0;
+	right:2px;
+}
+/* 颜色 */
+.green{
+	background:#008000 !important; 
+}
+.red{
+	background:#ff0000 !important; 
+}
+.blue{
+	background:#00ced1 !important; 
+	color: #fff !important;
+}
+/* 按钮 */
+.paper-btns{
+	text-align: right;
+	padding: 15px 0 20px;
+	border-bottom:2px solid #ccc;
+}
+.paper-btns a{
+	display: inline-block;
+	width: 56px;
+	height: 20px;
+	border: 1px solid #7997b1;
+	margin-right: 15px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	color: #333;
+	border-radius: 2px;
+	background:#f3f3ef; 
+}
+.paper-btns a:hover{
+	background: #e9eaea;
+}
+/* 练习结果 */
+.paper-result{
+	padding-left:20px;
+	font-size: 13px;
+}
+.paper-result h1{
+	margin-top: 10px;
+	margin-bottom:15px;
+}
+.paper-result .list{
+	margin:5px 0;
+}
+.paper-result .list div{
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	color: #000;
+	margin-right: 5px;
+	*zoom:1;
+	*display: inline;
+}
+.paper-content{
+	width: 100%;
+}
+.paper-content-item{
+	border: 1px solid #ccc;
+	position: relative;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	padding-right: 15px;
+}
+.paper-content-item h1{
+	padding-top: 20px;
+	font-size:17px; 
+	padding-bottom: 15px;
+}
+.paper-content-item p{
+	font-size: 17px;
+	line-height: 30px;
+}
+.paper-content-item p input{
+	margin-right: 5px;
+}
+.paper-content-item button{
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 15px;
+	bottom:10px;
+	padding: 2px 15px;
+	background: #f3f3ef;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.paper-content-item button:hover{
+	background: #e9eaea;
+}
+.paper-content-item .jj-content{
+	font-size: 13px;
+	margin:6px 0;
+}
+.paper-content-item .bt{
+	position: absolute;
+	top:-11px;
+	left:10px;
+	background: #fff;
+	display: inline-block;
+	padding:0 5px;
+	font-size: 13px;
+}
+.paper-content-item h1>img{
+	margin-right: 10px;
+}
+.paper-content-item .btn img{
+	margin-top:5px;
+}
+.paper-btn-box{
+	padding-bottom: 20px;
+}
+.btn{
+	padding:3px 12px;
+	border: 1px solid #7997b1;
+	background:#f3f3ef; 
+	display: inline-block;
+	border-radius: 3px;
+	margin-right: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	*zoom:1;
+	*display: inline;
+}
+.paper-btn-box .btn:hover{
+	background: #e9eaea;
+}
+/* 考试交卷提醒 */
+#info{
+	text-align: center;
+	padding-top:15px;
+	background: #fff;
+	border: 1px solid #8fbdfb;
+}
+#info img{
+	margin-right:5px;
+	vertical-align: middle;
+}
+#info1{
+	border: 1px solid #8fbdfb;
+	background:#008000;
+}
+#info1 h1{
+	text-align: center;
+	font-size:22px;
+	color: red;
+	font-weight: bold;
+	line-height:36px;
+	border-bottom: 1px solid #fff;
+}
+#info1 p{
+	line-height:28px;
+	color: #000;
+	text-indent: 1em;
+}
+#info2{
+	padding: 18px 20px;
+	font-size: 16px;
+	color: #333;
+	position: relative;
+	background: #f0f0f0;
+	border: 1px solid #8fbdfb;
+}
+#info2 p{
+	line-height: 28px;
+}
+#info2 .nums{
+	margin-top: 30px;
+}
+#info2 .score{
+	position: absolute;
+	top:50px;
+	right: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+/* 模拟试卷结束 */
+
+/* 仿真试卷开始 */
+.paper-content-item1{
+	padding-top:10px;
+	padding-bottom:8px;
+}
+.paper-content-item1 p{
+	font-size: 13px;
+	line-height: 22px;
+}
+.temp-box{
+	width: 172px;
+    height: 140px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 仿真试卷结束 */
+
+/* 弹框样式 */
+.layui-layer{
+	border:1px solid #7baaea;
+	background: #edf4ff !important;
+	border-radius:5px !important;
+	overflow: hidden;
+	padding: 6px !important;
+}
+.layui-layer-btn{
+	background: #fff;
+	margin-bottom: 6px;
+}
+.layui-layer-ico{
+	background: url("../imgs/colse.png") no-repeat !important;
+	background-position:0 !important;
+}
+.layui-layer-setwin a{
+	width: 20px !important;
+	height:19px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
