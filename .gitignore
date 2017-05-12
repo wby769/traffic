@@ -1,0 +1,6 @@
+system/
+apps/logs/
+public/upload/
+apps/tmp/
+public/tmp/
+public/lock
